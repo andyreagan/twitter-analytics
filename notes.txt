@@ -1,0 +1,12 @@
+27-05-13
+
+- fixed up both the geo plotting, and the TOD plotting to be fairly general
+
+- other ideas
+
+  - happiness over time
+  - happiness by TOD
+  - happiness by locale?
+  - radius of gyration (include some stats on the geo plot)
+  - some sort of entropy? (train on first half)
+  - add a bar chart to the right of the TOD plot
