@@ -26,7 +26,7 @@ def latlonparse(json_files):
 def plotmap(lat,lon,picname):
   import matplotlib.pyplot as plt
   plt.scatter(lat,lon)
-  plt.title('Tweets by location')
+
   plt.savefig(picname)
 
 def main():
@@ -39,10 +39,10 @@ def main():
   json_files = [dataroot + tmp for tmp in  subprocess.Popen(['ls',dataroot],stdout = subprocess.PIPE,stderr = subprocess.STDOUT).communicate()[0].rstrip().split('\n')]
 
   lat,lon = latlonparse(json_files)
-  print 'there were ' + str(len(lat)) ' geo tagged tweets'  
+  print 'there were ' + str(len(lat)) + ' geo tagged tweets'  
 
-  plotmap(lat,lon,username.split('/')[-1] + '.png')
-  print 'picture saved to ' + username.split('/')[-1] + '.png'
+  plotmap(lat,lon,username.split('/')[-1] + '-geo' + '.png')
+  print 'picture saved to ' + username.split('/')[-1] + '-geo' + '.png'
 
 if __name__ == '__main__':
   main()

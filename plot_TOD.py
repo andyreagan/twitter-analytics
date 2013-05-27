@@ -67,7 +67,7 @@ def plotscatter(dates,times,picname):
   buffer = 50
   plt.xlim([min(dates)-buffer,max(dates)+buffer])
   plt.ylim([0,24])
-#  plt.title("@andyreagan's tweetage by time of day")
+  plt.title('Tweets by Time of Day')
 #  plt.xticks((1266,1631,1996,2362),('2010','2011','2012','2013'))
   plt.savefig(picname)
 
@@ -88,8 +88,8 @@ def main():
   print 'there are ' + str(len(dates)) + ' tweets'
 
   # plot it with matplotlib
-  plotscatter(dates,times,username.split('/')[-1] + '.png')
-  print 'picture saved to ' + username.split('/')[-1] + '.png'
+  plotscatter(dates,times,username.split('/')[-1]+ '-TOD'  + '.png')
+  print 'picture saved to ' + username.split('/')[-1] + '-TOD' + '.png'
 
 if __name__ == '__main__':
   main()
