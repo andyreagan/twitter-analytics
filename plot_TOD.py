@@ -4,8 +4,6 @@
 #
 # written by Andy Reagan
 
-
-
 def dater(year_month_day_list):
   # INPUTS: year as an integer, month as 3 letter string, day as an integer IN A LIST
   #
@@ -55,10 +53,6 @@ def readinput(json_files):
     # import the json into a list
     tweets = json.loads(tmp_buffer)
     # first day of twitter: July 15, 2006
-    # year = [re.findall('20\d\d',tweets[i]['created_at'])[0] for i in range(len(tweets))]
-    #year = [int(tweets[i]['created_at'].split()[5]) for i in range(len(tweets))]
-    #month = [tweets[i]['created_at'].split()[1] for i in range(len(tweets))]
-    #day = [int(tweets[i]['created_at'].split()[2]) for i in range(len(tweets))]
     year_month_day=[[int(tweets[i]['created_at'].split()[5]),tweets[i]['created_at'].split()[1],int(tweets[i]['created_at'].split()[2])] for i in range(len(tweets))]
     time = [map(float,tweets[i]['created_at'].split()[3].split(':')) for i in range(len(tweets))]
     times.extend(map(timer,time))
@@ -76,7 +70,6 @@ def plotscatter(dates,times,picname):
 #  plt.title("@andyreagan's tweetage by time of day")
 #  plt.xticks((1266,1631,1996,2362),('2010','2011','2012','2013'))
   plt.savefig(picname)
-  #plt.show()
 
 def main():
   # run this in the level above the username, pass it the username
@@ -89,10 +82,12 @@ def main():
   # load all the files in their tweet directory
   import subprocess
   json_files = [dataroot + tmp for tmp in  subprocess.Popen(['ls',dataroot],stdout = subprocess.PIPE, stderr = subprocess.STDOUT).communicate()[0].rstrip().split('\n')]
-  
+
+  # parse the tweets into just dates and times  
   dates,times = readinput(json_files)
   print 'there are ' + str(len(dates)) + ' tweets'
 
+  # plot it with matplotlib
   plotscatter(dates,times,username.split('/')[-1] + '.png')
   print 'picture saved to ' + username.split('/')[-1] + '.png'
 
