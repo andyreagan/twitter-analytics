@@ -34,6 +34,7 @@ def dater(year_month_day_list):
   return date
 
 def timer(time):
+  # convert a list [hour,minute,second] to a decimal hour in EST
   time_zone = -5.
   tmp = (time[0]+time[1]/60.+time[2]/3600.+time_zone) % 24
   return tmp
@@ -41,9 +42,13 @@ def timer(time):
 def readinput(json_files):
   # load the json module
   import simplejson as json
-  
+  from math import floor
+
   times=[]
   dates=[]
+  # create bins for hours
+  hour_count=[0 for i in range(24)] # bin the number
+  hourly_text=['' for i in range(24)] # bin the text (long strings)
   for filename in json_files:
     # print filename
     # load the first file
@@ -54,9 +59,13 @@ def readinput(json_files):
     tweets = json.loads(tmp_buffer)
     # first day of twitter: July 15, 2006
     year_month_day=[[int(tweets[i]['created_at'].split()[5]),tweets[i]['created_at'].split()[1],int(tweets[i]['created_at'].split()[2])] for i in range(len(tweets))]
-    time = [map(float,tweets[i]['created_at'].split()[3].split(':')) for i in range(len(tweets))]
-    times.extend(map(timer,time))
+    time = map(timer,[map(float,tweets[i]['created_at'].split()[3].split(':')) for i in range(len(tweets))])
+    texts = 'test .'
+    times.extend(time)
     dates.extend(map(dater,year_month_day))
+    for i in range(len(time)):
+      hour_count[int(floor(time[i]))]+=1
+      hourly_text[int(floor(map(timer,time)))]+=texts #[i]
   return dates,times
 
 def plotscatter(dates,times,picname):
