@@ -10,3 +10,5 @@
   - radius of gyration (include some stats on the geo plot)
   - some sort of entropy? (train on first half)
   - add a bar chart to the right of the TOD plot
+
+- hw05 of chaos this spring has some subplot action
