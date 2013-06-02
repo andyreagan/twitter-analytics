@@ -12,3 +12,27 @@
   - add a bar chart to the right of the TOD plot
 
 - hw05 of chaos this spring has some subplot action
+
+02-06-13
+
+- added the bar chart to right of TOD plot
+- added a computation of happiness by hour, and plotted it.
+  -some of the bins are too much too small
+  -want to set some sort of sufficiency threshold, then
+  	bin by that.
+
+ideas:
+- march along each tweet, until we get desired number of labMT word OR desired number of tweets.
+for the instrument, i think that it should be number of LabMT words.
+once we have enough, dump them into a bin, and find what that bin represents by figuring out when the first and last tweet were.
+that would be happiness for  a bin of time that large.
+however, the size of that bin may not represent accurately where all of those tweets came from.
+we'd want to know the distribution of frequency within that bin.
+could be visualized by making a box plot of the frequency within that bin.
+or we could find the mean, and the std dev, and include those.
+kind of like a box and whisker.
+
+this kind of algorithm would work both within each hour, and across time.
+blue bars, with a light blue bar chart inside.
+vertical lines for mean and std dev.
+
