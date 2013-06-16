@@ -1,0 +1,3 @@
+"tweet_id","in_reply_to_status_id","in_reply_to_user_id","retweeted_status_id","retweeted_status_user_id","timestamp","source","text","expanded_urls"
+"1958805623","","13692902","","","2009-05-29 11:51:17 +0000","web","@brenes: Look at me, I'm tweeting! :)"
+"1958802022","","","","","2009-05-29 11:50:44 +0000","web","Starting to use Twitter in the (supposedly) proper way (that is, manually)."
