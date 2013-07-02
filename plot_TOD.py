@@ -69,7 +69,8 @@ def readinput(json_files):
     for i in range(len(time)):
       hour_count[int(floor(time[i]))]+=1
       hourly_text[int(floor(time[i]))]+=texts[i]+'\n'
-  return dates,times,hour_count,hourly_text
+  
+  return dates,times,textlist,hour_count,hourly_text
 
 def plotscatter(dates,times,picname,hour_count):
   import matplotlib.pyplot as plt
@@ -136,7 +137,6 @@ def main():
   # run this in the level above the username, pass it the username
 
   import sys
-
   username = sys.argv[1]
   dataroot = username + '/data/js/tweets/'
   
@@ -145,13 +145,13 @@ def main():
   json_files = [dataroot + tmp for tmp in  subprocess.Popen(['ls',dataroot],stdout = subprocess.PIPE, stderr = subprocess.STDOUT).communicate()[0].rstrip().split('\n')]
 
   # parse the tweets into just dates and times  
-  dates,times,hour_count,hourly_text = readinput(json_files)
+  dates,times,texts,hour_count,hourly_text = readinput(json_files)
   print 'there are ' + str(len(dates)) + ' tweets'
   
   # plot it with matplotlib
   plotscatter(dates,times,username.split('/')[-1]+ '-TOD'  + '.png',hour_count)
   print 'picture saved to ' + username.split('/')[-1] + '-TOD' + '.png'
-
+  
 #  print 'dumping the hourly text from hour 00'
 #  print hourly_text[0]
   
