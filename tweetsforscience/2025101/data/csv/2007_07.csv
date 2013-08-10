@@ -1,8 +1,0 @@
-"tweet_id","in_reply_to_status_id","in_reply_to_user_id","retweeted_status_id","retweeted_status_user_id","timestamp","source","text","expanded_urls"
-"156499112","","","","","2007-07-18 22:25:26 +0000","web","""(Hoja de ruta) Hebbian learning (Episodio I)"" Estos son los articulos que hay que leer para comenzar a hacerse una composicion de..."
-"156403342","","","","","2007-07-18 21:04:05 +0000","web","""(Evaluacion) Mas sobre precision, exhaustividad y la medida F"" Ya he hablado aqui en otras ocasiones sobre la evaluacion de un..."
-"153754522","","","","","2007-07-17 08:39:30 +0000","web","""(Integracion de documentos) Hoja de ruta (Episodio III)"" Una vez hayais desarrollado el prototipo para separar varios documentos en..."
-"153708212","","","","","2007-07-17 07:58:24 +0000","web","""(Segmentacion en pasajes) Hoja de ruta (Ep. Iv)"" Algunos de vosotros ya habeis terminado de implementar el metodo de Good-Turing..."
-"153033892","","","","","2007-07-16 21:49:36 +0000","web","""(Programacion distribuida) Hbase"" Algunos de los proyectos que estan en marcha y que se pondran en breve requieren procesar..."
-"145169792","","","","","2007-07-11 18:20:51 +0000","web","""(Articulo) Alineacion de documentos y sentencias"" Tania me envia un interesante articulo sobre alineacion de documentos y..."
-"138772842","","","","","2007-07-07 15:16:50 +0000","web","""(Hoja de ruta) Datos turisticos (episodio I)"" Aqui va la primera hoja de ruta para el proyecto de obtencion de informacion..."

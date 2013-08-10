@@ -1,7 +1,0 @@
-"tweet_id","in_reply_to_status_id","in_reply_to_user_id","retweeted_status_id","retweeted_status_user_id","timestamp","source","text","expanded_urls"
-"764381511","","","","","2008-02-28 09:46:56 +0000","web","""Clustering de consultas"" Hablaba el otro dia del problema de la expansion de consultas y de otro simetrico: la similitud de..."
-"730830322","","","","","2008-02-19 14:49:01 +0000","web","""Expansion de consultas y comparacion de cadenas cortas"" Los terminos query expansion o query reformulation hacen referencia al..."
-"730690942","","","","","2008-02-19 14:11:57 +0000","web","""Web Spam"" Un problema al que deben enfrentarse los buscadores (mas bien sus algoritmos) es el spam de enlaces. Si estos enlaces y las..."
-"722928252","","","","","2008-02-17 15:41:53 +0000","web","""Articulo potencialmente interesante"" Greg Linden habla en su blog de un articulo que parece muy atractivo (en particular para David)...."
-"707068042","","","","","2008-02-13 11:19:59 +0000","web","""An?sis de logs de consultas"" David sigue investigando el arte previo de cara a su trabajo de investigaci? ha publicado algunas de..."
-"693327732","","","","","2008-02-09 12:33:30 +0000","web","""Analisis de logs de consultas"" David sigue investigando el arte previo de cara a su trabajo de investigacion y ha publicado algunas..."

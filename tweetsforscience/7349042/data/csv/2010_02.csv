@@ -1,8 +1,0 @@
-"tweet_id","in_reply_to_status_id","in_reply_to_user_id","retweeted_status_id","retweeted_status_user_id","timestamp","source","text","expanded_urls"
-"9372786368","","","","","2010-02-20 06:13:18 +0000","web","Para el dise?ador web con problemas de pago (caso cndm.cl) http://csskillswitch.com/"
-"9300533825","","","","","2010-02-18 20:52:05 +0000","web","Algo n? 7 in keys: NSEC3RSASHA1 (bind), RSASHA1_NSEC3 (ldns), RSA-NSEC3-SHA1 (Net::DNS), RSASHA1-NSEC3-SHA1 (IANA) :( #DNSSEC"
-"8923497706","","","","","2010-02-10 23:04:41 +0000","<a href=""http://socialscope.net"" rel=""nofollow"">SocialScope</a>","RT @bortzmeyer: A.root-servers.net (@Verisign), second #DNS root server to serve #DNSSEC data. Everything is OK."
-"8745254923","","","","","2010-02-07 01:38:10 +0000","web","Avoiding sql injection, pick your language http://bobby-tables.com/ (via @perlbuzz)"
-"8514147713","","","","","2010-02-01 21:18:27 +0000","<a href=""http://socialscope.net"" rel=""nofollow"">SocialScope</a>","RT @ICANN_es: Resta menos del 10% de Espacio de direcciones IPv4: La Adopci?n de IPv6 Resulta Esencial.- http://bit.ly/8YXP7y #ICANN #IPv6"
-"8501763722","","","","","2010-02-01 15:12:49 +0000","web","How unique and trackable is your web browser? http://panopticlick.eff.org"
-"8501697254","","","","","2010-02-01 15:10:58 +0000","web","Infograf?a de la rapidez y costo de Internet en pa?ses con ranking en ITIF http://ow.ly/12z6y"
