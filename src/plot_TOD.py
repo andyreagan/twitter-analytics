@@ -110,10 +110,16 @@ def happiness(tmpstr):
     if word in LabMT:
       score_list.append(float(LabMT[word][1]))
 #  print score_list
-  from numpy import mean,std
-  happs = mean(score_list)
-  happs_std = std(score_list)
-  return happs,happs_std
+
+  ## with numpy
+  #from numpy import mean,std
+  #happs = mean(score_list)
+  #happs_std = std(score_list)
+  #return happs,happs_std
+  
+  ## without numpy
+  happs = sum(score_list)/len(score_list)
+  return happs,0
 
 def plothapps(happs,happs_std,picname):
   import matplotlib.pyplot as plt
