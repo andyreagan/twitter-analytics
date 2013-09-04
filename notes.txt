@@ -20,5 +20,10 @@ i need to find out whether the zoo server supports wsgi for little python vacc a
 the google app engine dashboard is at
 https://appengine.google.com/dashboard?&app_id=s~computationalstorylabhedo
 
+okay so I've got the thing working following the authomatic basic demo
+no posting of tweets or anything yet
 
+I think the next step is to make it look nice, and add the pictures
+-> the pictures can be made in matplotlib, but that means I have to add it
+-> also don't want to have to add numpy, that's too huge of a libarary
 
