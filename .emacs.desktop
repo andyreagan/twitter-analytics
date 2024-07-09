@@ -1,0 +1,45 @@
+;; -*- mode: emacs-lisp; coding: emacs-mule; -*-
+;; --------------------------------------------------------------------------
+;; Desktop File for Emacs
+;; --------------------------------------------------------------------------
+;; Created Sun Oct 20 19:22:07 2013
+;; Desktop file format version 206
+;; Emacs version 22.1.1
+
+;; Global section:
+(setq extended-command-history nil)
+(setq file-name-history nil)
+(setq grep-history nil)
+(setq minibuffer-history nil)
+(setq query-replace-history nil)
+(setq read-expression-history nil)
+(setq regexp-history nil)
+(setq regexp-search-ring '("http"))
+(setq search-ring '("rep" "credent" "data" "Your" "h1"))
+(setq shell-command-history nil)
+(setq tags-file-name nil)
+(setq register-alist nil)
+
+;; Buffer section -- buffers listed in same order as in buffer list:
+(desktop-create-buffer 206
+  "/Users/andyreagan/work/2013/2013-01twitter-analytics/README.md"
+  "README.md"
+  'fundamental-mode
+  nil
+  2290
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-append-buffer-args 206
+  "/Users/andyreagan/work/2013/2013-01twitter-analytics/app.yaml"
+  "app.yaml"
+  'fundamental-mode
+  nil
+  62
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
